@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+#summary ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(2, 17, 27);
+}
+  
+#summary li {
+    float: left;
+}
+  
+#summary li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+#summary li a:hover {
+    background-color: rgb(11, 93, 30);
+}
+
+#perfil {
+    margin-top: 60px;
+}
