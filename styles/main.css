@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Oxygen:wght@700&display=swap');
 
-/*Variáveis de Cor*/
+/*Variáveis de Cor [paleta de cor do site]*/
 :root {
     --black: rgb(2, 17, 27);
     --white: rgb(254, 255, 250);
     --green: rgb(11, 93, 30);
+    --blue: #89d2dc;
+    --red: #A40000;
 }
 
 body {
     font-family: 'Fira Code', monospace;
     margin: 0;
     /*Cor Base de Fundo*/
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
 }
 
 h1, h2, h3{
@@ -24,11 +26,8 @@ em, strong {
     text-decoration: underline;
 }
 
-hr {
-    width: 75%;
-}
-
 nav {
+    overflow: hidden;
     width: 100%;
     height: 100px;
     background:gy;
@@ -48,7 +47,7 @@ nav ul {
     margin: 0 auto;
     padding-top: 25px;
     overflow: hidden;
-    background-color: var(--black);
+    background-color: var(--green);
 }
   
 nav li {
@@ -56,25 +55,41 @@ nav li {
 }
   
 nav li a {
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    background-color: var(--green);
+    transition: 0.5s;
+    color: var(--white);
+    background-color: var(--black);
 }
 
-#perfil {
+#perfil{
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    padding: 40px 30px;
+    padding-bottom: 5px;
+    height: 250px;
+    width: 800px;
+    border-top: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+    text-align: left;
+}
+#perfil h1{
     text-align: center;
-    margin-top: 10px;
 }
-
 #perfil img{
+    float: left;
+    margin-right: 10px;
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    padding: 2px;
+    background-color: var(--red);
 }
 
 .important1 {
@@ -87,4 +102,50 @@ nav li a:hover {
 
 .important3 {
     font-size: small;
+}
+
+.cards {
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    width: 900px;
+    /*border: 2px solid yellow;*/
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--green);
+}
+
+.card {
+    background-color: --;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    text-align: left;
+    max-height: 200px;
+    width: 400px;
+    border: 1px solid var(--green);
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.card a:hover{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.card h2{
+    text-align: center;
+}
+
+.card:hover{
+    background-color: var(--red);
+    border: 1px solid var(--black);
+}
+
+#other_skills li:nth-child(odd){
+    text-decoration: underline;
 }
