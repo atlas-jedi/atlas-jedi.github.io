@@ -7,41 +7,53 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#perfil">Perfil</a></li>
-            <li><a href="#other_skills">Principais Habilidades</a></li>
-            <li><a href="#main_skills">Outras Habilidades</a></li>
-        </ul>
-    </nav>
-    <div id="perfil">
-        <hr>
-        <img src="./imgs/perfil.png" alt="Foto de André Pestana">
-        <h1>André Pestana Silva</h1>
-        <p>Eu nasci em 2002, em <strong>Parauapebas-PA</strong> no Brasil. Sou estudante de Desenvolvimento Web na <em>Trybe</em>.</p>
-        <p>Sou apaixonado por tecnologia e código desde os 13 anos.</p>
-        <hr>
-    </div>
-    <h2 id="social">Redes:</h2>
-    <ul>
-        <li><a href="https://github.com/atlas-jedi" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/andrepestanajs/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/pestana.py/" target="_blank">Instagram</a></li>
-    </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#other_skills">Principais Habilidades</a></li>
+                <li><a href="#main_skills">Outras Habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2 id="main_skills">Habilidades de Orgulho:</h2>
-    <ul>
-        <li class="important2">Bom Ouvinte</li>
-        <li class="important1">Empatia</li>
-        <li class="important2">Trabalho em Equipe</li>
-    </ul>
-    
-    <h2 id="other_skills">Outras Habilidades</h2>
-    <ul>
-        <li class="important1">Fundamentos de Javascript</li>
-        <li class="important2">Básico de Python</li>
-        <li class="important3">Desenvolvimento com Arduino</li>
-        <li class="important2">Git & GitHub</li>
-    </ul>
+    <main>
+        <section id="perfil">
+            <img src="./imgs/perfil.png" alt="Foto de André Pestana">
+            <h1>André Pestana Silva</h1>
+            <p>Eu nasci em 2002, em <strong>Parauapebas-PA</strong> no Brasil. Sou estudante de Desenvolvimento Web na <em>Trybe</em>.</p>
+            <p>Sou apaixonado por tecnologia e código desde os 13 anos.</p>
+        </section>
+
+        <div class="cards">
+            <section class="card">
+                <h2>Redes:</h2>
+                <ul>
+                    <li><a href="https://github.com/atlas-jedi" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/andrepestanajs/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/pestana.py/" target="_blank">Instagram</a></li>
+                </ul>
+            </section>
+            
+            <section id="main_skills" class="card">
+                <h2>Habilidades de Orgulho:</h2>
+                <ul>
+                    <li class="important2">Bom Ouvinte</li>
+                    <li class="important1">Empatia</li>
+                    <li class="important2">Trabalho em Equipe</li>
+                </ul>
+            </section>
+            
+            <section id="other_skills" class="card">
+                <h2>Outras Habilidades</h2>
+                <ul>
+                    <li class="important1">Fundamentos de Javascript</li>
+                    <li class="important2">Básico de Python</li>
+                    <li class="important3">Desenvolvimento com Arduino</li>
+                    <li class="important2">Git & GitHub</li>
+                </ul>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
